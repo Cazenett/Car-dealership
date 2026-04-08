@@ -254,9 +254,35 @@ body {
 }
 
 .social-info {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 20px;
+  align-items: center;
+}
+
+.social-info > a {
+  display: inline-flex;
+}
+
+.social-info > div {
+  flex: 1 1 100%;
+}
+
+.social-info img {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
+.social-info a img {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
+.social-info a {
+  width: 40px;
 }
 
 .social-info div {
