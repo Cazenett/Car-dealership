@@ -316,7 +316,7 @@ body {
   text-align: center;
 }
 
-/* Estilos para o botão Ver Detalhes */
+/* Styles for the View details button */
 .details-btn {
   background-color: #99dd3a;
   color: #0b1011;
@@ -333,7 +333,7 @@ body {
   background-color: #7cb82a;
 }
 
-/* Modal de Detalhes */
+/* Details modal */
 .modal {
   display: none;
   position: fixed;
