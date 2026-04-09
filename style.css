@@ -306,3 +306,83 @@ body {
 #Gallery {
   scroll-margin-top: 120px;
 }
+
+/* Estilos para o nome do carro */
+.gallery-container h3 {
+  color: #bfc5b8;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Estilos para o botão Ver Detalhes */
+.details-btn {
+  background-color: #99dd3a;
+  color: #0b1011;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+  background-color: #7cb82a;
+}
+
+/* Modal de Detalhes */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: #0b1011;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #bfc5b8;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px;
+  color: #bfc5b8;
+}
+
+.close-btn {
+  color: #bfc5b8;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #99dd3a;
+}
+
+#car-title {
+  color: #99dd3a;
+  margin-bottom: 10px;
+}
+
+#car-description {
+  margin-bottom: 15px;
+}
+
+#car-specs {
+  list-style-type: none;
+  padding: 0;
+}
+
+#car-specs li {
+  margin-bottom: 5px;
+}

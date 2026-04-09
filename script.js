@@ -180,4 +180,123 @@ criarMiniaturas(7);
 atualizarGaleria(7); 
 
 criarMiniaturas(8);
-atualizarGaleria(8);    
+atualizarGaleria(8);
+
+// Detalhes dos carros
+const carDetails = {
+    1: {
+        title: "Porsche 911 GT3 Touring",
+        description: "The Porsche 911 GT3 Touring is a limited production version that combines the extreme performance of the GT3 with a more discreet and elegant design, eliminating the large fixed spoiler in favor of an automatic retractable spoiler to maintain downforce at high speeds.",
+        specs: [
+            "Motor: 4.0L Flat-6 Turbo",
+            "Potência: 510 hp",
+            "Torque: 470 Nm",
+            "0-100 km/h: 3.4 segundos",
+            "Velocidade máxima: 313 km/h"
+        ]
+    },
+    2: {
+        title: "Honda Civic Type R",
+        description: "The Honda Civic Type R is the fastest sports hatchback in the world, known for its exceptional handling and turbocharged engine.",
+        specs: [
+            "Motor: 1.6L Turbo I4",
+            "Potência: 185 hp",
+            "Torque: 160 Nm",
+            "0-100 km/h: 6.7 segundos",
+            "Velocidade máxima: 235 km/h"
+        ]
+    },
+    3: {
+        title: "BMW M3 F80",
+        description: "The BMW M3 F80 was the fifth generation of the model, produced between 2014 and 2018, marking the transition from the V8 engine to a 3.0L L6 bi-turbo S55 engine with 431 hp.",
+        specs: [
+            "Motor: 3.0L I6 BiTurbo",
+            "Potência: 431 hp",
+            "Torque: 550 Nm",
+            "0-100 km/h: 4.3 segundos",
+            "Velocidade máxima: 250 km/h"
+        ]
+    },
+    4: {
+        title: "BMW M3 G80",
+        description: "The new generation of the M3, with an inline-6 turbo engine, rear-wheel drive, and cutting-edge technology for maximum performance.",
+        specs: [
+            "Motor: 3.0L I6 BiTurbo",
+            "Potência: 510 hp",
+            "Torque: 650 Nm",
+            "0-100 km/h: 3.9 segundos",
+            "Velocidade máxima: 290 km/h"
+        ]
+    },
+    5: {
+        title: "Lamborghini Aventador SVJ",
+        description: "The Lamborghini Aventador SVJ is the most extreme version of the Aventador, featuring a torque vectoring system and advanced aerodynamics.",
+        specs: [
+            "Motor: 5.2L V10",
+            "Potência: 610 hp",
+            "Torque: 560 Nm",
+            "0-100 km/h: 2.9 segundos",
+            "Velocidade máxima: 350 km/h"
+        ]
+    },
+    6: {
+        title: "Porsche 911 Carrera",
+        description: "The iconic Porsche 911, a symbol of performance and luxury, with decades of evolution and constant innovations.",
+        specs: [
+            "Motor: 3.0L Flat-6 Turbo",
+            "Potência: 450 hp",
+            "Torque: 530 Nm",
+            "0-100 km/h: 3.5 segundos",
+            "Velocidade máxima: 308 km/h"
+        ]
+    },
+    7: {
+        title: "BMW M3 F80",
+        description: "The BMW M3 F80 was the fifth generation of the model, produced between 2014 and 2018, marking the transition from the V8 engine to a 3.0L L6 bi-turbo S55 engine with 431 hp.",
+        specs: [
+            "Motor: 3.0L I6 BiTurbo",
+            "Potência: 431 hp",
+            "Torque: 550 Nm",
+            "0-100 km/h: 4.1 segundos",
+            "Velocidade máxima: 250 km/h"
+        ]
+    },
+    8: {
+        title: "Honda Accord",
+        description: "The Honda Accord is a reliable family sedan, known for its efficiency, comfort, and advanced technology.",
+        specs: [
+            "Motor: 1.5L Turbo I4",
+            "Potência: 192 hp",
+            "Torque: 260 Nm",
+            "0-100 km/h: 7.6 segundos",
+            "Velocidade máxima: 200 km/h"
+        ]
+    }
+};
+
+// Funções do modal
+function openDetails(carId) {
+    const modal = document.getElementById('details-modal');
+    const title = document.getElementById('car-title');
+    const description = document.getElementById('car-description');
+    const specs = document.getElementById('car-specs');
+
+    const details = carDetails[carId];
+    title.textContent = details.title;
+    description.textContent = details.description;
+    specs.innerHTML = details.specs.map(spec => `<li>${spec}</li>`).join('');
+
+    modal.style.display = 'block';
+}
+
+function closeDetails() {
+    document.getElementById('details-modal').style.display = 'none';
+}
+
+// Fechar modal ao clicar fora
+window.onclick = function(event) {
+    const modal = document.getElementById('details-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}    

@@ -19,16 +19,15 @@
                     <li><a href="#Gallery">Home</a></li>
                     <li><a href="#Gallery">Gallery</a></li>
                     <li><a href="#About">About</a></li>
-                    <li><a href="#Social">Social media </a></li>
                 </ul>
             </nav>
         </div>
     </header>
 <div class="galleries-row" id="Gallery">
     <section class="gallery-container" id="gallery-1">
+        <h3>Porsche 911 GT3 Touring</h3>
         <div class="main-photo">
-            <img id="main-photo-1" src="assets/Galeria/152 (1).jpg" alt="Honda Civic Type R">
-
+            <img id="main-photo-1" src="assets/Galeria/152 (1).jpg" alt="GT3 Touring">
             <!-- Contador de imagens -->
              <div class="counter" id="counter-1">1 / 5 </div>
 
@@ -37,13 +36,13 @@
               <div class="arrow right-arrow" onclick="proxima(1)"> ⮞ </div> 
         </div>
         <!-- Miniaturas -->
-        <div class="miniature" id="miniature-1">
-
-        </div>
+        <div class="miniature" id="miniature-1"></div>
+        <button class="details-btn" onclick="openDetails(1)">View details</button>
     </section>
     <section class="gallery-container" id="gallery-2">
+        <h3>Honda Civic Type R</h3>
         <div class="main-photo">
-            <img id="main-photo-2" src="assets/Galeria/161 (1).jpg" alt="Porsche 911">
+            <img id="main-photo-2" src="assets/Galeria/161 (1).jpg" alt="Type R">
 
             <!-- Contador de imagens -->
              <div class="counter" id="counter-2">1 / 5 </div>
@@ -53,13 +52,13 @@
               <div class="arrow right-arrow" onclick="proxima(2)"> ⮞ </div> 
         </div>
         <!-- Miniaturas -->
-        <div class="miniature" id="miniature-2">
-
-        </div>
+        <div class="miniature" id="miniature-2"></div>
+        <button class="details-btn" onclick="openDetails(2)">View details</button>
     </section>
     <section class="gallery-container" id="gallery-3">
+        <h3>BMW M3 F80</h3>
         <div class="main-photo">
-            <img id="main-photo-3" src="assets/Galeria/42 (1).jpg" alt="Honda Civic Type R">
+            <img id="main-photo-3" src="assets/Galeria/42 (1).jpg" alt="M3 F80">
 
             <!-- Contador de imagens -->
              <div class="counter" id="counter-3">1 / 5 </div>
@@ -69,13 +68,13 @@
               <div class="arrow right-arrow" onclick="proxima(3)"> ⮞ </div> 
         </div>
         <!-- Miniaturas -->
-        <div class="miniature" id="miniature-3">
-
-        </div>
+        <div class="miniature" id="miniature-3"></div>
+        <button class="details-btn" onclick="openDetails(3)">View details</button>
     </section>
     <section class="gallery-container" id="gallery-4">
+        <h3>BMW M3 G80</h3>
         <div class="main-photo">
-            <img id="main-photo-4" src="assets/Galeria/98 (1).jpg" alt="Porsche 911">
+            <img id="main-photo-4" src="assets/Galeria/98 (1).jpg" alt="M3 G80">
 
             <!-- Contador de imagens -->
              <div class="counter" id="counter-4">1 / 5 </div>
@@ -86,10 +85,12 @@
         </div>
         <!-- Miniaturas -->
         <div class="miniature" id="miniature-4"> </div>
+        <button class="details-btn" onclick="openDetails(4)">View details</button>
     </section>
     <section class="gallery-container" id="gallery-5">
+        <h3>Lamborghini Aventador SVJ</h3>
         <div class="main-photo">
-            <img id="main-photo-5" src="assets/Galeria/48 (1).jpg" alt="Porsche 911">
+            <img id="main-photo-5" src="assets/Galeria/48 (1).jpg" alt="SVJ">
 
             <!-- Contador de imagens -->
              <div class="counter" id="counter-5">1 / 5 </div>
@@ -100,8 +101,10 @@
         </div>
         <!-- Miniaturas -->
         <div class="miniature" id="miniature-5"> </div>
+        <button class="details-btn" onclick="openDetails(5)">View details</button>
     </section>
     <section class="gallery-container" id="gallery-6">
+        <h3>Porsche 911 Carrera</h3>
         <div class="main-photo">
             <img id="main-photo-6" src="assets/Galeria/50 (1).jpg" alt="Porsche 911">
 
@@ -114,10 +117,12 @@
         </div>
         <!-- Miniaturas -->
         <div class="miniature" id="miniature-6"> </div>
+        <button class="details-btn" onclick="openDetails(6)">View details</button>
     </section>
     <section class="gallery-container" id="gallery-7">
+        <h3>BMW M3 F80</h3>
         <div class="main-photo">
-            <img id="main-photo-7" src="assets/Galeria/52 (1).jpg" alt="Porsche 911">
+            <img id="main-photo-7" src="assets/Galeria/52 (1).jpg" alt="M3 F80">
 
             <!-- Contador de imagens -->
              <div class="counter" id="counter-7">1 / 5 </div>
@@ -128,10 +133,12 @@
         </div>
         <!-- Miniaturas -->
         <div class="miniature" id="miniature-7"> </div>
+        <button class="details-btn" onclick="openDetails(7)">View details</button>
     </section>
     <section class="gallery-container" id="gallery-8">
+        <h3>Honda Accord</h3>
         <div class="main-photo">
-            <img id="main-photo-8" src="assets/Galeria/54 (1).jpg" alt="Porsche 911">
+            <img id="main-photo-8" src="assets/Galeria/54 (1).jpg" alt="Accord">
 
             <!-- Contador de imagens -->
              <div class="counter" id="counter-8">1 / 5 </div>
@@ -142,8 +149,20 @@
         </div>
         <!-- Miniaturas -->
         <div class="miniature" id="miniature-8"> </div>
+        <button class="details-btn" onclick="openDetails(8)">View details</button>
     </section>
 </div>
+
+<!-- Modal de Detalhes -->
+<div id="details-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeDetails()">&times;</span>
+        <h2 id="car-title"></h2>
+        <p id="car-description"></p>
+        <ul id="car-specs"></ul>
+    </div>
+</div>
+
     <section class="about-social">
         <div class="about" id="About">
             <div class="section-header">
@@ -152,17 +171,17 @@
                 </div>
                 <div>
                     <h2>Green Auto Club</h2>
-                    <p>Somos um clube dedicado a carros esportivos, encontros e customização. Aqui você encontra adrenalina em quatro rodas.</p>
+                    <p>We are a club dedicated to sports cars, meetups, and customization. Here you'll find adrenaline on four wheels.</p>
                 </div>
             </div>
             <div class="about-text">
-                <p>A Green Auto Club nasceu para reunir admiradores de performance e design automotivo. Nosso objetivo é promover perfis de entusiastas, mostrar coleções e compartilhar o amor por carros incríveis.</p>
+                <p>Green Auto Club was created to bring together admirers of automotive performance and design. Our goal is to promote enthusiast profiles, showcase collections, and share the love for incredible cars.</p>
             </div>
         </div>
 
         <div class="social" id="Social">
             <h2>Social</h2>
-            <p>Siga-nos nas redes sociais para mais atualizações.</p>
+            <p>Follow us on social media for more updates.</p>
             <div class="social-info">
                 <img class="instagram" src="assets/imagens/instagram.png" alt="Instagram">
                 <img class="threads" src="assets/imagens/threads.png" alt="Threads">
