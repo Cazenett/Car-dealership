@@ -9,10 +9,12 @@
 </head>
 <body>
     <header class="header-container">
-        <div class="logo">
-            <img src="assets/imagens/1 - Logo Primaria (Atual).png" alt="logo green auto club">
+        <div class="header-left">
+            <div class="logo">
+                <img src="assets/imagens/1 - Logo Primaria (Atual).png" alt="logo green auto club">
+            </div>
+            <div class="name"> <h1>Green Auto Club</h1></div>
         </div>
-        <div class="name"> <h1>Green Auto Club</h1></div>
         <div class="nav-container">
             <nav>
                 <ul>
@@ -27,7 +29,7 @@
     <section class="gallery-container" id="gallery-1">
         <h3>Porsche 911 GT3 Touring</h3>
         <div class="main-photo">
-            <img id="main-photo-1" src="assets/Galeria/152 (1).jpg" alt="GT3 Touring">
+            <img id="main-photo-1" src="assets/Galeria/1 (1).jpg" alt="GT3 Touring">
             <!-- Image counter -->
              <div class="counter" id="counter-1">1 / 5 </div>
 
@@ -42,7 +44,7 @@
     <section class="gallery-container" id="gallery-2">
         <h3>Honda Civic Type R</h3>
         <div class="main-photo">
-            <img id="main-photo-2" src="assets/Galeria/161 (1).jpg" alt="Type R">
+            <img id="main-photo-2" src="assets/Galeria/2 (1).jpg" alt="Type R">
 
             <!-- Image counter -->
              <div class="counter" id="counter-2">1 / 5 </div>
@@ -58,7 +60,7 @@
     <section class="gallery-container" id="gallery-3">
         <h3>BMW M3 F80</h3>
         <div class="main-photo">
-            <img id="main-photo-3" src="assets/Galeria/42 (1).jpg" alt="M3 F80">
+            <img id="main-photo-3" src="assets/Galeria/3 (1).jpg" alt="M3 F80">
 
             <!-- Image counter -->
              <div class="counter" id="counter-3">1 / 5 </div>
@@ -74,7 +76,7 @@
     <section class="gallery-container" id="gallery-4">
         <h3>BMW M3 G80</h3>
         <div class="main-photo">
-            <img id="main-photo-4" src="assets/Galeria/98 (1).jpg" alt="M3 G80">
+            <img id="main-photo-4" src="assets/Galeria/4 (1).jpg" alt="M3 G80">
 
             <!-- Image counter -->
              <div class="counter" id="counter-4">1 / 5 </div>
@@ -90,7 +92,7 @@
     <section class="gallery-container" id="gallery-5">
         <h3>Lamborghini Aventador SVJ</h3>
         <div class="main-photo">
-            <img id="main-photo-5" src="assets/Galeria/48 (1).jpg" alt="SVJ">
+            <img id="main-photo-5" src="assets/Galeria/5 (1).jpg" alt="SVJ">
 
             <!-- Image counter -->
              <div class="counter" id="counter-5">1 / 5 </div>
@@ -106,7 +108,7 @@
     <section class="gallery-container" id="gallery-6">
         <h3>Porsche 911 Carrera</h3>
         <div class="main-photo">
-            <img id="main-photo-6" src="assets/Galeria/50 (1).jpg" alt="Porsche 911">
+            <img id="main-photo-6" src="assets/Galeria/6 (1).jpg" alt="Porsche 911">
 
             <!-- Image counter -->
              <div class="counter" id="counter-6">1 / 5 </div>
@@ -122,7 +124,7 @@
     <section class="gallery-container" id="gallery-7">
         <h3>BMW M3 F80</h3>
         <div class="main-photo">
-            <img id="main-photo-7" src="assets/Galeria/52 (1).jpg" alt="M3 F80">
+            <img id="main-photo-7" src="assets/Galeria/7 (1).jpg" alt="M3 F80">
 
             <!-- Image counter -->
              <div class="counter" id="counter-7">1 / 5 </div>
@@ -138,7 +140,7 @@
     <section class="gallery-container" id="gallery-8">
         <h3>Honda Accord</h3>
         <div class="main-photo">
-            <img id="main-photo-8" src="assets/Galeria/54 (1).jpg" alt="Accord">
+            <img id="main-photo-8" src="assets/Galeria/8 (1).jpg" alt="Accord">
 
             <!-- Image counter -->
              <div class="counter" id="counter-8">1 / 5 </div>
@@ -150,6 +152,110 @@
         <!-- Miniaturas -->
         <div class="miniature" id="miniature-8"> </div>
         <button class="details-btn" onclick="openDetails(8)">View details</button>
+    </section>
+</div>
+
+<div class="ver-mais-container">
+    <button id="ver-mais-btn" class="ver-mais-btn" onclick="toggleMoreGalleries()">
+        View more ⬇️
+    </button>
+</div>
+
+<div class="galleries-row hidden" id="galleries-more">
+    <section class="gallery-container" id="gallery-9">
+        <h3>Ferrari 488 Pista</h3>
+        <div class="main-photo">
+            <img id="main-photo-9" src="assets/Galeria/9 (1).jpg" alt="Ferrari 488 Pista">
+            <div class="counter" id="counter-9">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(9)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(9)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-9"></div>
+        <button class="details-btn" onclick="openDetails(9)">View details</button>
+    </section>
+
+    <section class="gallery-container" id="gallery-10">
+        <h3>Audi R8 V10 Performance</h3>
+        <div class="main-photo">
+            <img id="main-photo-10" src="assets/Galeria/10 (1).jpg" alt="Audi R8">
+            <div class="counter" id="counter-10">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(10)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(10)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-10"></div>
+        <button class="details-btn" onclick="openDetails(10)">View details</button>
+    </section>
+
+    <section class="gallery-container" id="gallery-11">
+        <h3>Mercedes-AMG GT R</h3>
+        <div class="main-photo">
+            <img id="main-photo-11" src="assets/Galeria/11 (1).jpg" alt="AMG GT R">
+            <div class="counter" id="counter-11">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(11)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(11)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-11"></div>
+        <button class="details-btn" onclick="openDetails(11)">View details</button>
+    </section>
+
+    <section class="gallery-container" id="gallery-12">
+        <h3>Nissan GT-R NISMO</h3>
+        <div class="main-photo">
+            <img id="main-photo-12" src="assets/Galeria/12 (1).jpg" alt="GT-R NISMO">
+            <div class="counter" id="counter-12">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(12)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(12)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-12"></div>
+        <button class="details-btn" onclick="openDetails(12)">View details</button>
+    </section>
+
+    <section class="gallery-container" id="gallery-13">
+        <h3>Chevrolet Corvette C8</h3>
+        <div class="main-photo">
+            <img id="main-photo-13" src="assets/Galeria/13 (1).jpg" alt="Corvette C8">
+            <div class="counter" id="counter-13">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(13)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(13)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-13"></div>
+        <button class="details-btn" onclick="openDetails(13)">View details</button>
+    </section>
+
+    <section class="gallery-container" id="gallery-14">
+        <h3>McLaren 720S</h3>
+        <div class="main-photo">
+            <img id="main-photo-14" src="assets/Galeria/14 (1).jpg" alt="McLaren 720S">
+            <div class="counter" id="counter-14">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(14)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(14)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-14"></div>
+        <button class="details-btn" onclick="openDetails(14)">View details</button>
+    </section>
+
+    <section class="gallery-container" id="gallery-15">
+        <h3>Ford Mustang Shelby GT500</h3>
+        <div class="main-photo">
+            <img id="main-photo-15" src="assets/Galeria/15 (1).jpg" alt="Shelby GT500">
+            <div class="counter" id="counter-15">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(15)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(15)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-15"></div>
+        <button class="details-btn" onclick="openDetails(15)">View details</button>
+    </section>
+
+    <section class="gallery-container" id="gallery-16">
+        <h3>Toyota GR Supra</h3>
+        <div class="main-photo">
+            <img id="main-photo-16" src="assets/Galeria/16 (1).jpg" alt="GR Supra">
+            <div class="counter" id="counter-16">1 / 4 </div>
+            <div class="arrow left-arrow" onclick="anterior(16)"> ⮜ </div>
+            <div class="arrow right-arrow" onclick="proxima(16)"> ⮞ </div> 
+        </div>
+        <div class="miniature" id="miniature-16"></div>
+        <button class="details-btn" onclick="openDetails(16)">View details</button>
     </section>
 </div>
 

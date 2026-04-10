@@ -11,12 +11,9 @@ body {
 }
 
 .header-container {
-  flex-wrap: wrap;
-}
-
-.header-container {
-    background: #0b1011;           
-    backdrop-filter: blur(12px);
+    background: linear-gradient(135deg, #0b1011 0%, #1a2a1f 50%, #0b1011 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
     left: 0;
@@ -27,13 +24,14 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* ==================== LADO ESQUERDO (Logo + Nome) ==================== */
 .header-left {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 20px;
 }
 
 .logo img {
@@ -43,7 +41,7 @@ body {
 }
 
 .name h1 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     color: #bfc5b8;                
     letter-spacing: -1px;
@@ -111,7 +109,7 @@ body {
 
 .galleries-row {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px 0;
@@ -138,7 +136,7 @@ body {
 .main-photo img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Setas */
@@ -180,7 +178,7 @@ body {
 .miniature {
   display: flex;
   gap: 5px;
-  overflow-x: hidden;
+  overflow: visible;
   padding: 6px 0;
   flex-wrap: wrap;
   justify-content: center;
@@ -190,16 +188,19 @@ body {
   width: 70px;
   height: 50px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   border: 2px solid transparent;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 .miniature img:hover,
 .miniature img.active {
-  border: 2px solid #99dd3a;
-  transform: scale(1.05);
+  border: 3px solid #99dd3a;
+  transform: scale(1.15);
+  box-shadow: 0 4px 15px rgba(153, 221, 58, 0.4);
 }
 
 .about-social {
@@ -385,4 +386,35 @@ body {
 
 #car-specs li {
   margin-bottom: 5px;
+}
+
+.ver-mais-container {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.ver-mais-btn {
+    background-color: #99dd3a;
+    color: #0b1011;
+    border: none;
+    padding: 16px 40px;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(153, 221, 58, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ver-mais-btn:hover {
+    background-color: #7cb82a;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Classe para esconder a segunda row */
+.hidden {
+    display: none !important;
 }
