@@ -1,5 +1,4 @@
-﻿// ==================== DADOS DE TODAS AS GALERIAS ====================
-const galleriesData = [
+﻿const galleriesData = [
     {
         id: 1,
         title: "Porsche 911 GT3 Touring",
@@ -56,7 +55,6 @@ const galleriesData = [
         specs: ["Engine: 1.5L Turbo I4", "Power: 192 hp", "Torque: 260 Nm", "0-100 km/h: 7.6 seconds", "Top speed: 200 km/h"],
         photos: ["assets/Galeria/8 (1).jpg", "assets/Galeria/8 (2).jpg", "assets/Galeria/8 (3).jpg", "assets/Galeria/8 (4).jpg"]
     },
-    // ==================== NOVAS 8 GALERIAS (Ver Mais) ====================
     {
         id: 9,
         title: "BMW M3 F80",
@@ -115,10 +113,8 @@ const galleriesData = [
     }
 ];
 
-// ==================== ESTADO GLOBAL ====================
 let currentIndices = {};
-
-// ==================== FUNÇÕES REUTILIZÁVEIS ====================
+ 
 function getCar(id) {
     return galleriesData.find(car => car.id === id);
 }
@@ -148,13 +144,10 @@ function atualizarGaleria(id) {
     const counter = document.getElementById(`counter-${id}`);
     const miniatureImgs = document.querySelectorAll(`#miniature-${id} img`);
 
-    // Atualiza foto principal
     mainPhoto.src = car.photos[indice];
 
-    // Atualiza contador
     counter.textContent = `${indice + 1} / ${car.photos.length}`;
 
-    // Atualiza borda ativa nas miniaturas
     miniatureImgs.forEach((img, i) => {
         img.classList.toggle("active", i === indice);
     });
@@ -218,7 +211,6 @@ function toggleMoreGalleries() {
     button.textContent = isHidden ? 'View more ⬇️' : 'View less ⬆️';
 }
 
-// ==================== INICIALIZAÇÃO ====================
 function initGalleries() {
     galleriesData.forEach(car => {
         currentIndices[car.id] = 0;
